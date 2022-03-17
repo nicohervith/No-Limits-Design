@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Columna responsive</title>
+
+  <style>
+
+       *{
+   margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.publi{
+  position: relative;
+  left:5px;
+}
+
+.main-div{
+  background-color: rgb(255, 255, 255);
+}
+
+.img-logo{
+  width:220px;
+  height: auto;
+  position: relative;
+
+}
+
+.container-cabecera{
+    display: grid;
+}
+
+.caja-cabecera{
+  position:relative;
+  top:30px;
+  left:20px
+}
+
+.caja2-cabecera{
+  border: 1.8px solid #008bdb;
+  padding:10px;
+  position:relative;
+  color:#008bdb;
+  width: 130px;
+  align-items: center;
+  border-radius: 3px;
+  text-align: center;
+  left: 420px;
+  cursor: pointer;
+}
+
+.container-first-img{
+  display: grid;
+  grid-template-columns: 30% 70%;
+
+}
+
+.container-first-img img{
+  width: 100%;
+  height: 100%;
+}
+
+.second-img{
+  
+  display: grid;
+  grid-template-columns: 50% 50%;
+  /*grid-template-columns: repeat(auto-fill,
+  minmax(300px,1fr));
+  grid-auto-rows: 250px;*/
+  /*display: flex;
+  flex-direction: row ;
+  flex-wrap: wrap;*/
+  
+  
+  
+}
+
+.container-second-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+.container-text{
+  margin-top: 1.5px;
+  display:grid; 
+  width: 600px; 
+  height: auto; 
+  background-color: #1e5cb3;
+}
+
+.button {
+  border: 1.8px solid #17178f;;
+  padding:10px;
+  position:relative;
+  width: 300px;
+  align-items: center;
+  border-radius: 3px;
+  text-align: center;
+  margin: auto;
+  cursor: pointer;
+}
+.button button{
+  cursor: pointer;
+  background-color:transparent;
+  border:none;
+  color:#17178f
+}
+
+.nav-bar{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin:auto;
+}
+.nav-bar nav a{
+  text-decoration: none;
+  color:#008bdb;
+  margin:10px
+}
+
+.container-img-info{
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+}
+
+
+.caja-img1{
+  margin:50px;
+  width: 200px;
+  align-items: center;
+}
+
+.caja-img1 img{
+  width: auto;
+
+  height: 50px;
+  align-items: center;
+  object-fit: cover;
+}
+
+.caja-img1 p{
+    font-size:13px;
+    width: 100%;
+    color:#116fa5;
+    margin:auto;
+  
+}
+
+@media only screen and ( max-width:480px){
+
+       .second-img {
+          display: flex;
+          flex-direction: column ;
+          flex-wrap: wrap;
+          width: auto;
+          height: auto;
+    }
+
+
+}
+
+
+  </style>
+
+</head>
+
+<body style="background: #c9c9c9;">
+    <table  margin="auto" border="0" cellpadding="0" cellspacing="0" width="100%">
+          <tr>
+               <td  align="center" valign="top">
+                    <table margin="auto" align="center" border="0" cellpadding="20" cellspacing="0" width="600"> 
+                           <tr>
+                                <td  valign="top" style="font-family: Arial, Helvetica, sans-serif;">
+
+                                  <div class="publi">
+                                    <p>PUBLICIDAD</p>
+                                  </div>
+                                    <div class="main-div">
+                                        <div>
+                                                  <img class="img-logo" src="https://mir-s3-cdn-cf.behance.net/projects/404/dcd35880171925.Y3JvcCwzMDAwLDIzNDYsMCwzMjY.jpg" alt="">
+                                          </div>
+                                          <hr/>
+                                          <br>
+                                
+                                                <div class="container-cabecera">
+                                                      <div class="caja-cabecera">Hola, @user</div>
+                                                      <div class="caja2-cabecera">Mi cuenta</div>
+                                                </div>
+                                          <br>
+                                          <br>
+                                          <div class="container-first-img">
+                                                <img src="https://icm.aexp-static.com/Internet/internationalcardshop/gcp/corporate/en_au/images/intl-corp-background-tile.png" alt="">
+                                                <img src="https://www.americanexpress.com/content/dam/amex/ar/benefits/ARPlus/ARPLUS_Viaja4.jpg" alt="">
+                                              </div>
+                                              <br><br>
+                                              <p style="text-align: center;">
+                                                Por ser Socio de American Express ya podés disfrutar de <p style="text-align: center; color:rgb(23, 23, 143)"><b>un nuevo mundo de recompensas y beneficios exclusivos.</b></p>
+                                              </p>
+                                              <br><br>
+                                              <p style="color:#17178f; text-align: center;"><b>Tu beneficio elegidos es: </b></p>
+                                              <br>
+                                              <br>
+                                              <br>
+                                              <br>
+                                              <hr style="height: 10px; background-color:#bbbbbbdd;">
+                                              
+                                              <div class="second-img">
+                                                      <div class="container-second-img">
+                                                            <img src="https://www.serargentino.com/public/images/2019/10/Tips-para-visitar-El-Chalt%C3%A9n-773x458.jpeg" alt="">
+                                                      </div>
+                                                  <div class="container-second-img" >
+                                                      <br>
+                                                        <h1 style="color:#116fa5; text-align: center;">14.000</h1>
+                                                        <h4  style="color:#1b8dcf; text-align: center;">Puntos Membership Rewards</h4>
+                                                        <br>
+                                                        <p style="font-size: 14px; text-align: center; width: 80%; margin:auto;"> por alcanzar un consumo de <b>$40.000</b> dentro de los primeros <b>3 meses</b> de recibida La Tarjeta</p>
+                                                        <br>
+                                                        <p style="text-align: center; font-size: 12px; width: 90%;margin:auto;">Con esta cantidad de puntos podés canjear un pasaje a Montevideo y Punta del Este, Catamarca, Formosa, La Rioja, Mendoza, Corrientes, Neuquén, Posadas, REsistencia, San Luis, Santiago del Estero, Tucumán.</p>
+                                                        <br>
+                                                  </div>
+                                                 
+                                              </div>
+
+
+                                              
+                                                <div class="container-text">
+                                                  <p style="margin:auto; padding:20px; font-size: 15px; color:white; font-family: Arial, Helvetica, sans-serif; "><b>Un mundo de beneficios y recompensas te está esperando.</b></p>
+                                                  <p style="text-align: center;"><a href="" style="color:white; ">Conocelo acá</a></p>
+                                                  <br>
+                                                </div>
+
+                                                <br>
+                                                <br>
+
+                                                <div class="">
+                                                  <p style="text-align:center">Comenzá a vivir tus puntos Membership Rewards.</p>
+                                                  <p style="text-align:center; color:#17178f;"><b>Todos tus consumos suman puntos que nunca vencen.</b></p>
+                                                  <br>
+                                                  <h3 style="text-align:center; color:#17178f;">1 USD = 1 Punto Membership Rewards</h3>
+                                                  <br>
+                                                  <br>
+                                                  <div class="button">
+                                                        <button style="align-items:center;margin:auto;"><b>Descubrí más recompensas</b></button>
+                                                  </div>
+                                                </div>
+                                              
+                                              <br>
+
+                                                      <img style="width: 100%; margin:auto; " src="https://amexplatinum.baccredomatic.com/wp-content/uploads/2020/08/logoAmex_novivas.png" alt="">
+                                              
+                                              <br>
+                                                  <hr> 
+                                                  <br>
+                                                  <p style="margin:auto; text-align: center; color:#17178f;">Obtené más de American Express</p>
+                                                
+                                                  <div class="container-img-info">
+
+                                                     <div class="caja-img1"> 
+                                                         <img  src="https://cdn-icons-png.flaticon.com/512/1284/1284072.png" alt="">
+                                                         <p >Resumen electrónico</p>
+                                                      </div>
+
+                                                      <div class="caja-img1"> 
+                                                          <img  src="https://pemc.coop/wp-content/uploads/2018/04/credit-card-blue-icon-3.png" alt="">
+                                                            <p >Beneficios</p>
+                                                      </div>
+                                                  </div>
+                
+                                              <hr  style="opacity: 0.3;"/>
+                                              <br>
+
+                                              <div class="nav-bar">
+                                                  <nav>
+                                                        <a href="">Privacidad</a>
+                                                        <a href="">Contacto</a>
+                                                        <a href="">Actualizar email</a>
+                                                        <a href="">Cancelar suscripción</a>
+                                                  </nav>
+                                              </div>
+                                              <br>
+
+                                              <hr />
+                                              <div>
+                                                <p style="font-size: 11px; 	text-transform: uppercase; padding:10px; color:#0b2446">
+                                                  Tiene 10 días hábiles para revocar la aceptación del producto o servicio desde la fecha de recepción de este mail, así como también podrá concluir la relación contractual con american express en cualquier momento. a tal efecto podrá enviarnos un correo electrónico a servicioaclientesmex@aexp.com, carta por correo postal a arenales 707, ciudad autónoma de buenos aires, cp c1061aaa o bien comunicarse telefónicamente al 0910-444-4653. puede encontrar las tassas de interés actualizadas en el siguiente enlace: 1) sujeto a términos y condiciones del programa membership rewards, disponible en <a href=""
+                                                    style="color:blue">www.americanexpress.com.ar/mr</a> en la opción "sobre el porgrama". 2) promoción válida desde el 01/03/2019 hasta el 01/06/2019 inclusive para nuevos socios de tarjetas personales emitidas y administradas por american express s.a. participan únicamente aquellos socios que hayan adquirido una tarjeta american express s.a. a partir del 01/03/2019. american express acreditará 14.000 puntos membership rewards si la cuenta alcanza un consumo mínimo de $40.000 dentro de los 90 días corridos de recibida la tarjeta american express realizará la acreditación de los 14.000 puntos membership rewards dentro de los 60 días hábiles de finalizada la promoción. consulte términos y condiciones en<a href="" style="color:blue">americanexpress.com.ar/mr</a> en la opción información del programa beneficio no combinable ni acumulable con otras promociones.
+                                                </p>
+                                              
+                                                <p style="font-size: 11px; 	text-transform: uppercase; padding:10px; color:#0b2446">
+                                                  Los datos personales son almacenados en una base de datos, cuyo responsable es american express argentina s.a. con
+                                                  domicilio legal en arenales 707, entrepiso, cp c1061aaa, c.a.b.a. usted podrá en cualquier momento solicitar el
+                                                  retiro o bloqueo de su nombre, total o parcial, de nuestra base de datos y podrá solicitar información acerca del
+                                                  nombre del responsable o usuario de la base de datos que proveyó su información. ley 25.326 art.27. -inc. 3. "el
+                                                  titular podrá en cualquier momento solicitar el retiro o bloqueo de su nombre de los bancos de datos a los que se
+                                                  refiere el presente articulo", decreto 1558/01 -art. 27. -3er. párrafo. "en toda comunicación con fines de
+                                                  publicidad que se realice por correo, teléfono, correo electrónico, internet u otro medio a distancia a conocer, se
+                                                  deberá indicar, en forma expresa y destacada, la posibilidad del titular del dato de solicitar el retiro o bloqueo,
+                                                  total o parcial, de su nombre de la base de datos, a pedido del interesado se deberá informar el nombre del
+                                                  responsable o usuario del banco de datos que proveyó la información"
+                                                </p>
+                                              
+                                                <p style="font-size: 11px; 	text-transform: uppercase; padding:10px; color:#0b2446">
+                                                  Instrucciones para cancelar la suscripción: este correo electrónico publicitario está destinado a residentes de
+                                                  argentina y fue enviado a %%email&&. si ha sido recibido en una dirección diferente significa que fue reenviado. si
+                                                  no desea recibir nuevos mensajes publicitarios en el futuro, por favor responda este e-mail con la palabra "borrar"
+                                                  en el asunto (subject), o visite las <a href="" style="color:blue">preferencias de correo electrónico</a>
+                                                  en el sitio web de american express, servicio al cliente: por favor no responda (reply) este e-mail y dirija todas
+                                                  sus consultas a <a href="" style="color:blue"> servicio al cliente</a>
+                                                  , declaración sobre privacidad: para saber como obtenemos, aseguramos y utilizamos su información personal
+                                                  cumpliendo con la ley 25.236, visite la declaración sobre privacidad de american express ingresando en: <a href=""
+                                                    style="color:blue">www.americanexpress.com.ar/privacidad</a>
+                                              
+                                                </p>
+                                                <p style="font-size: 11px; 	text-transform: uppercase; padding:10px; color:#0b2446">© 2019 american express company</p>
+                                                <img style="width: 220px; margin:10px"
+                                                  src="https://argenprop-noticias.s3.us-west-2.amazonaws.com/20200911164707/Logo_horizontal-SSN.png" alt="">
+                                              </div>
+
+
+
+
+                                    </div>
+
+                                </td>
+                           </tr>
+                    </table>
+               </td>
+          </tr>
+    </table>
+  
+</body>
+</html>

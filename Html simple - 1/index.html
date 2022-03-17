@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/dd86b8759f.js" crossorigin="anonymous"></script>
+  <title>Document</title>
+
+
+  <style>
+
+
+    *{
+   margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+.cabecera{
+    display:grid; 
+    grid-template-columns: 120px 1fr; 
+    margin:auto; 
+    color:#fff; 
+    width: 600px;
+}
+
+.container{
+    display:block;
+    background-color: #fff;
+    margin:auto;
+    max-width: 600px;
+    height:auto;
+}
+
+.nav-container{
+   display: grid; 
+   margin:25px; 
+   justify-content: center;
+}
+
+nav{
+  position: relative; 
+  margin: auto;	
+  width: 100%;	
+  height: 50px;	
+  border-radius: 8px;
+  	font-size: 0;
+}
+      
+nav a{
+  font-size: 15px;  
+	text-transform: uppercase;
+	color: #2675db;
+	text-decoration: none;
+	line-height: 50px;
+  margin:auto;
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	text-align: center;
+}
+
+nav .animation{
+	position: absolute;
+	height: 100%;
+	/* height: 5px; */
+	top: 0;
+	/* bottom: 0; */
+	z-index: 0;
+	background: #0b2446;
+	border-radius: 4px;
+	transition: all .5s ease 0s;
+}
+nav a:nth-child(1){
+	width: 100px;
+}
+nav .start-home, a:nth-child(1):hover~.animation{
+	width: 100px;
+	left: 0;
+  
+}
+
+a:nth-child(1):hover{
+  	transition: all .5s ease 0s;
+color:#faf9f9;
+}
+
+nav a:nth-child(2){
+	width: 110px;
+}
+nav a:nth-child(2):hover~.animation{
+	width: 110px;
+	left: 100px;
+}
+
+a:nth-child(2):hover{
+  	transition: all .5s ease 0s;
+color:#faf9f9;
+}
+
+nav a:nth-child(3){
+	width: 100px;
+}
+nav a:nth-child(3):hover~.animation{
+	width: 100px;
+	left: 210px;
+}
+
+a:nth-child(3):hover{
+  	transition: all .5s ease 0s;
+color:#faf9f9;
+}
+
+.facebook-section{
+  display:grid; 
+  margin:25px auto; 
+  border: 1.3px solid rgb(0, 0, 0);
+   opacity:0.3; 
+   width:40px; 
+   height: 40px;
+    border-radius: 20px 20px; 
+}
+
+.container-text{
+      margin-top:-5px; 
+      display:grid; 
+      width: 600px; 
+      height: auto; 
+      background-color: #0b2446;
+}
+
+.container-cajas{
+  display: flex; 
+  flex-direction: row; 
+  margin: auto;
+}
+
+.container-text{
+  margin-top:-5px; 
+  display:grid; 
+  width: 600px; 
+  height: auto; 
+  background-color: #0b2446;
+}
+
+
+  </style>
+</head>
+
+<body style="background: #2675db;
+    font-family: sans-serif;
+    font-size: 18px;
+    padding:0px;">
+
+    <table style=" border:0; margin:auto;" cellpadding="0" cellspacing="0" width ="100%">
+        <tr>
+              <td align="center" valign="top">
+                  <table margin="auto" border="0" cellpadding="20" cellspacing="0" width="600">
+                    <tr>
+                      <td  valign="top" style="font-family: Arial, Helvetica, sans-serif;"> 
+                            <div class="cabecera">
+                                  <h4 style="font-size: 13px;"> Pubilicidad</h4>
+                                  <h4 style="font-size: 13px;"> Tenés problemas para ver este email? <a href="#" style="color:#fff ">Hace click acá</a> </h4>
+                            </div>
+                            <div class="container">
+                                  <img style="margin:15px 30px ; width: 80px; height: auto;" class="img-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/American_Express_logo_%282018%29.svg/1200px-American_Express_logo_%282018%29.svg.png" alt="" />
+                                  <br />
+                                  <hr style="opacity: 0.3;" />
+                                  <br />
+                                  <div>
+                                    <h4 style="margin-left:20px ; color:#2675db">Hola, @Invitado</h4>
+                                  </div>
+                                  <div class="nav-container"> 
+                                      <nav>
+                                        <a href="#">Mis viajes</a>
+                                        <a  href="#">Mis bienes</a>
+                                        <a  href="#">Mi cuenta</a>
+                                            <div class="animation start-home"></div>
+                                      </nav>
+                                  </div>
+                                <div class="img-grecia" style="width: 100%;">
+                                      <img src="https://www.tekcrispy.com/wp-content/uploads/2020/05/turismo-grecia.jpg" alt="" style="width:100%; height: 400px; object-fit: cover;">
+                                </div>
+
+                                <div class="container-text" >
+                                    <p
+                                    style="margin:auto; padding:20px; font-size: 35px; color:white; font-family: Arial, Helvetica, sans-serif; ">Estés donde estés, hagas lo que hagas, te respaldamos.</p>
+                                </div>
+
+                                <div class="container-second-text" style="display:grid; width:600px;height: auto; background-color: #e6e6e6;">
+                                  <br/>
+                                    <h4 style="padding:20px; color:#0b2446"><b>Tu tranquilidad es lo más importante.</b></h4>
+                                    <p style="padding:20px; color:#0b2446">Al contratar un seguro o un servicio de asistencia al viajero a través de American Express, no sólo estás eligiendo la protección de prestigiosas compañías seleccionadas por nosotros. También contás con la tranquilidad de obtener atención personalizada en nuestra unidad de servicio de atención especializada en seguros.</p>
+                                    <br />
+
+                                </div>
+
+                                  <div class="container-second-text" style="display:grid; width:600px;height: auto; background-color: #ffffff;">
+                                       <br />
+                                          <p style="padding:20px; color:#0b2446; ">Estamos a tu disposición para atender de manera exclusiva cualquier consulta o inquietud sobre los seguros y serivicios de asistencia en viajes que tengas o desees contratar a través de American Express.</p>
+                        
+                                            <p style="padding:20px; color:#0b2446">Te invitamos a comunicarte al 0810-888-SEGU(7348) de lunes a viernes de 9 a 20 horas para responder tus consultas para adquirir las siguientes coberturas exclusivas:</p>
+
+                                             <div class="container-cajas">
+                                              <div class="caja" style="margin:20px; width: 70px;">
+                                                        <img style="width: 50px; height: auto; margin-left: 10px;"src="https://i.pinimg.com/originals/ab/f1/80/abf180964abb052f91529589b8433ce6.png" alt="">
+                                                        <p style="font-size:13px; color:#0b2446; text-align: center; width: 60px;"> <b>Asistencia al viajero</b></p>
+                                                  </div>
+                                                  
+                                                  <div class="caja" style="margin:17px ">
+                                                    
+                                                       <img style="width: 40px; height: auto;" src="https://cdn-icons-png.flaticon.com/512/31/31611.png" alt="">
+                                                      <p style="font-size:13px; color:#0b2446 ; text-align: center;"><b>Vida</b></p>
+                                                  </div>
+
+                                                  <div class="caja" style="margin:17px">
+                                                            <img style="width:40px; height: auto;" src="https://cdn-icons-png.flaticon.com/512/89/89102.png" alt="">
+                                                            <p style="font-size:13px; color:#0b2446; text-align: center;"><b>Auto</b></p>
+                                                  </div>
+                                                  
+                                                  <div class="caja" style="margin:17px">
+                                                           <img style="width: 40px; height: auto;" src="https://images.vexels.com/media/users/3/157651/isolated/preview/f0fc37a5ee2d2ecf1ed147b528905394-icono-de-casa-tradicional.png" alt="">
+                                                          <p style="font-size:13px; color:#0b2446; text-align: center;"><b>Hogar</b></p>
+                                                  </div>
+
+                                                  <div class="caja" style="margin:17px ; width:70px; align-items: center; justify-content: center;">
+                                                          <img style="width: 38px; margin-left:20px; height: auto; object-fit: cover;align-items: center;" src="https://cdn-icons-png.flaticon.com/512/25/25256.png" alt="">
+                                                          <p style="font-size:12px; color:#0b2446; text-align: center; width: 70px;"><b>Protección en movimiento</b></p>
+                                                  </div>
+                                                  
+                                                </div>
+                                           
+                                         
+                                      </p>
+                                    </div>
+
+                                    <div class="container-text">
+                                            <p style="width:400px; margin:auto; padding:25px; font-size: 18px; text-align: center; color:white; font-family: Arial, Helvetica, sans-serif; ">Comunicate al <b>0810-888-SEGU(7348)</b> de lunes a viernes de <b>9 a 20 horas.</b></p>
+                                    </div>
+                                    
+                                        <div class="facebook-section" >
+                                                  <svg style="cursor:pointer; position:relative; width:20px; height: 20px; margin:auto; opacity:0.5;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                                    <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                                    <path
+                                                      d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
+                                                  </svg>
+                                        </div>        
+                                    <hr/>
+
+                                      <div class="container-second-text" style="display:grid; width:600px;height: auto; ">
+                                              <br />
+                                                  <h4 style="padding:20px; color:#0b2446; margin: auto;">No <b style=" color:#0b2446; margin: auto; font-family: Helvetica;">vivas la vida</b> sin ella</h4>
+                                                  <div style="display:flex; flex-direction: row;padding:20px; width:420px; margin:auto; justify-content: center; align-items: center;">
+                                                      <p style="cursor:pointer; color:#103c75; font-size:15px; margin:8px">Privacidad</p>
+                                                      <p style="cursor:pointer; color:#103c75; font-size:15px; margin:8px">Contacto</p>
+                                                      <p style="cursor:pointer; color:#103c75; font-size:15px; margin:8px">Actualizar contacto</p>
+                                                      <p style="cursor:pointer; color:#103c75; font-size:15px; margin:8px">Desuscribirse</p>
+                                                    </div>
+                                              <br />
+                                      
+                                      </div>
+                                      <hr/>
+                                       <div>
+                                          <p style="font-size: 11px; 	text-transform: uppercase; padding:10px; color:#0b2446">
+                                          AMERICAN EXPRESS OFRECE LOS PRODUCTOS EMITIDOS POR LAS COMPAÑIAS ASEGURADORAS ALIADAS (DISPONIBLES EN <a href="" style="color:blue">www.americanexpress.com.ar/segurosyservicios</a>) EN SU CARÁCTER DE AGENTE INSTITORIO, INSCRIPTO EN LA SUPERINTENDENCIA DE SEGUROS DE LA NACIÓN (SNN) BAJO N° 92. TELÉFONO SSN 0800-666-8400,
+                                        <a href="" style="color:blue">www.argentina.gob.ar/ssn</a></p>
+                                        
+                                        <p style="font-size: 11px; 	text-transform: uppercase; padding:10px; color:#0b2446">
+                                              Los datos personales son almacenados en una base de datos, cuyo responsable es american express argentina s.a. con domicilio legal en arenales 707, entrepiso, cp c1061aaa, c.a.b.a. usted podrá en cualquier momento solicitar el retiro o bloqueo de su nombre, total o parcial, de nuestra base de datos y podrá solicitar información acerca del nombre del responsable o usuario de la base de datos que proveyó su información. ley 25.326 art.27. -inc. 3. "el titular podrá en cualquier momento solicitar el retiro o bloqueo de su nombre de los bancos de datos a los que se refiere el presente articulo", decreto 1558/01 -art. 27. -3er. párrafo. "en toda comunicación con fines de publicidad que se realice por correo, teléfono, correo electrónico, internet u otro medio a distancia a conocer, se deberá indicar, en forma expresa y destacada, la posibilidad del titular del dato de solicitar el retiro o bloqueo, total o parcial, de su nombre de la base de datos, a pedido del interesado se deberá informar el nombre del responsable o usuario del banco de datos que proveyó la información"
+                                        </p>
+                                      
+                                        <p style="font-size: 11px; 	text-transform: uppercase; padding:10px; color:#0b2446">
+                                              Instrucciones para cancelar la suscripción: este correo electrónico publicitario está destinado a residentes de argentina y fue enviado a %%email&&. si ha sido recibido en una dirección diferente significa que fue reenviado. si no desea recibir nuevos mensajes publicitarios en el futuro, por favor responda este e-mail con la palabra "borrar" en el asunto (subject), o visite las <a href="" style="color:blue">preferencias de correo electrónico</a>
+                                              en el sitio web de american express, servicio al cliente: por favor no responda (reply) este e-mail y dirija todas sus consultas a <a href="" style="color:blue"> servicio al cliente</a>
+                                              , declaración sobre privacidad: para saber como obtenemos, aseguramos y utilizamos su información personal cumpliendo con la ley 25.236, visite la declaración sobre privacidad de american express ingresando en: <a href="" style="color:blue">www.americanexpress.com.ar/privacidad</a>
+
+                                        </p>
+                                        <p style="font-size: 11px; 	text-transform: uppercase; padding:10px; color:#0b2446">© american express company</p>
+                                        <img style="width: 220px; margin:10px" src="https://argenprop-noticias.s3.us-west-2.amazonaws.com/20200911164707/Logo_horizontal-SSN.png" alt="">
+                                      </div>
+                                    
+                            </div>
+                            
+                      </td>
+                    </tr>
+                  </table>
+              </td>
+        </tr>
+    </table>
+</body>
+
+
+</html>
